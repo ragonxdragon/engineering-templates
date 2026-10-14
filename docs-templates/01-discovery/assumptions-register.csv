@@ -1,0 +1,3 @@
+ID,Category,Assumption,If it is not true,Confirm by,Owner,Due,Status
+A-01,Site,Each install point has mains power within 3 m,Add an electrician visit per point and a week to the schedule,Site survey,Lead engineer,{YYYY-MM-DD},Open
+A-02,Volume,{Assumption stated so it can be checked},{Which estimate line changes and how},{Document or meeting that settles it},{Name},{YYYY-MM-DD},Open

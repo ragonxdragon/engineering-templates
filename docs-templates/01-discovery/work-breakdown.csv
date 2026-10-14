@@ -1,0 +1,4 @@
+ID,Phase,Activity,Deliverable,Week start,Week end,Owner,Lead engineer hours,Engineer hours,Reviewer hours,Architect hours,Project manager hours,Total hours,Basis
+0.1,0 Mobilize,Kickoff and project charter,D1,1,1,Project manager,4,4,0,2,4,=SUM(H2:L2),Two-hour kickoff plus preparation
+0.2,0 Mobilize,Site survey,D2,1,2,Lead engineer,8,8,0,0,0,=SUM(H3:L3),One day per site; site count from the questionnaire
+1.1,1 Build,{Activity},{Deliverable ID},{n},{n},{Role},{h},{h},{h},{h},{h},=SUM(H4:L4),{Where the hours come from}
