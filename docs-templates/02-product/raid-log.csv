@@ -1,0 +1,5 @@
+ID,Type,Description,Impact,Likelihood,Owner,Response,Response type,Due,Status,Last reviewed
+R-01,Risk,Gateway firmware update fails on trailers out of cellular coverage for days,Trailers run old firmware and miss a fix,Medium,Firmware lead,Update resumes from the last block and the gateway retries daily,Mitigate,{YYYY-MM-DD},Open,{YYYY-MM-DD}
+A-01,Assumption,{Assumption stated so it can be checked},{What changes if it is false},{High/Medium/Low},{Name},{How and when it is confirmed},Confirm,{YYYY-MM-DD},Open,{YYYY-MM-DD}
+I-01,Issue,{Something already going wrong},{Effect on scope or schedule},n/a,{Name},{Action},Resolve,{YYYY-MM-DD},Open,{YYYY-MM-DD}
+D-01,Dependency,{Work or decision owned by someone else},{What waits on it},{High/Medium/Low},{Name},{Agreed date and who chases it},Track,{YYYY-MM-DD},Open,{YYYY-MM-DD}

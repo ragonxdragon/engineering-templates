@@ -1,0 +1,59 @@
+# Gate registry.
+#
+# A gate is a named check that a release must pass: what it asserts, what
+# would prove it wrong, and the command that runs it. Declare every gate early,
+# with the phase it first applies to, so each subsystem states how it can fail
+# before it is built.
+#
+# Status widens the fields a gate must carry:
+#
+#   declared     id, first_phase, standing
+#   specified    plus assertion and falsified_by
+#   implemented  plus test_path and command
+#
+# A release fails when a gate in force at that phase is not implemented. Gate
+# IDs are never renamed, because release notes cite them.
+#
+# kind:
+#   validation  checked against an outside reference (a standard, a published
+#               value, a vendor specification), named in `reference`
+#   policy      a rule the project sets for itself, such as pinned actions
+#   budget      a limit the project chose, such as build time or bundle size;
+#               the limit is a setting, not a measured result
+
+version: 1
+gates:
+  GATE-QS-001:
+    kind: budget
+    status: implemented
+    first_phase: P1
+    standing: true
+    owner: "docs/design/{section}.md"
+    assertion: >-
+      The quickstart runs from a clean machine, following only the published
+      instructions, and ends with {observable result} in under {n} seconds.
+    falsified_by: >-
+      A missing step in the instructions, a run that needs a manual fix, or a
+      run longer than the budget.
+    test_path: tests/test_quickstart.py
+    command: "{command that runs the check}"
+
+  GATE-ACT-001:
+    kind: policy
+    status: specified
+    first_phase: P1
+    standing: true
+    owner: "CONTRIBUTING.md"
+    assertion: >-
+      Every third-party action in every workflow is pinned to a full commit SHA.
+    falsified_by: >-
+      One action referenced by tag or branch.
+
+  GATE-CAL-001:
+    kind: validation
+    status: declared
+    first_phase: P2
+    standing: true
+    owner: "docs/design/{section}.md"
+    reference: "{Standard or published reference, with edition}"
+    reference_url: "https://example.com/{reference}"
