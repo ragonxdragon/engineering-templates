@@ -1,0 +1,5 @@
+node_modules/
+*.docx
+!docs-templates/**/*.docx
+.DS_Store
+Thumbs.db

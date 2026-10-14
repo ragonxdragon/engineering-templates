@@ -1,0 +1,16 @@
+# Link check settings for the docs workflow.
+
+# Placeholder URLs in the starter files point at a repository that does not
+# exist until someone copies the starter. They are checked after adoption.
+exclude = [
+  '^https://github\.com/OWNER/',
+  '^https://example\.com',
+  '^mailto:',
+]
+
+# Rate limits from large hosts are not broken links.
+accept = ["200..=299", "429"]
+
+max_retries = 3
+timeout = 30
+include_fragments = true

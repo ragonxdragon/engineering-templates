@@ -1,0 +1,14 @@
+// markdownlint-cli2 runner config. Rules live in the "config" block below.
+{
+  "gitignore": true,
+  "ignores": ["node_modules", "**/node_modules"],
+  "config": {
+    "default": true,
+    // Prose and tables wrap where they read best.
+    "MD013": false,
+    // Keep a Changelog repeats "### Added" once per release section.
+    "MD024": { "siblings_only": true },
+    // Plain-text blocks (directory trees, sample output) carry no language.
+    "MD040": false
+  }
+}
