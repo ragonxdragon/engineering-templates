@@ -1,0 +1,2 @@
+ID,Category,Test name,Preconditions,Procedure,Expected result,Priority,Why it needs real equipment,Result,Evidence,Tested by,Date
+HW-01,{Power},{Recovers from a power cut during an update},{Unit on build X; update staged},{1. Start the update. 2. Cut power at 50 percent. 3. Restore power.},{Unit boots the previous image and reports the failed update},{High},{Power loss cannot be simulated faithfully in software},{pass/fail},{log file or photo},{initials},{YYYY-MM-DD}

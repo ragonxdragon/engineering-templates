@@ -1,0 +1,2 @@
+Observation,Date,Shift,Operator code,Condition,Unit ID,Units handled,Step 1 {name} s,Step 2 {name} s,Step 3 {name} s,Step 4 {name} s,Total s,Interruptions,Notes
+1,{YYYY-MM-DD},{A/B/C},{OP1},{baseline/changed},{unit ID},{count},,,,,=SUM(H2:K2),{none or description},

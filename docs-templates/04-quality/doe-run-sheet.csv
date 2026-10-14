@@ -1,0 +1,9 @@
+Standard order,Run order,Block,A {factor name},B {factor name},C {factor name},Replicate,Response 1 {name and unit},Response 2 {name and unit},Operator,Date,Time,Deviation from plan,Notes
+1,5,1,-1,-1,-1,1,,,,{YYYY-MM-DD},{HH:MM},none,
+2,2,1,1,-1,-1,1,,,,{YYYY-MM-DD},{HH:MM},none,
+3,8,1,-1,1,-1,1,,,,{YYYY-MM-DD},{HH:MM},none,
+4,1,1,1,1,-1,1,,,,{YYYY-MM-DD},{HH:MM},none,
+5,7,1,-1,-1,1,1,,,,{YYYY-MM-DD},{HH:MM},none,
+6,3,1,1,-1,1,1,,,,{YYYY-MM-DD},{HH:MM},none,
+7,6,1,-1,1,1,1,,,,{YYYY-MM-DD},{HH:MM},none,
+8,4,1,1,1,1,1,,,,{YYYY-MM-DD},{HH:MM},none,

@@ -1,0 +1,2 @@
+Observation ID,Date,Time,Phase,Location,Configuration,Item ID,Operator code,Condition,Measured value,Unit,Reference value,Pass or fail,Cause code,Recorded by,Notes
+1,{YYYY-MM-DD},{HH:MM},{bench/site/soak},{location ID},{configuration label},{item ID},{OP1},{baseline/changed},{value},{unit},{value},{pass/fail},{code from the cause list},{initials},

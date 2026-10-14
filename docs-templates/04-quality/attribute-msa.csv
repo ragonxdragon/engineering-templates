@@ -1,0 +1,2 @@
+Trial,Item ID,Reference,Appraiser A first,Appraiser A repeat,Appraiser B first,Appraiser B repeat,A agrees with self,B agrees with self,A agrees with reference,B agrees with reference,A agrees with B
+1,{item ID},{1 or 0},,,,,"=IF(D2=E2,1,0)","=IF(F2=G2,1,0)","=IF(AND(D2=C2,E2=C2),1,0)","=IF(AND(F2=C2,G2=C2),1,0)","=IF(AND(D2=F2,E2=G2),1,0)"
