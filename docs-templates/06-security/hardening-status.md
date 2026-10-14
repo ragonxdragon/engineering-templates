@@ -39,8 +39,8 @@ the [threat model](threat-model.md).
 
 ## Worked example
 
-An open TL-1 item read: "Update rollback proof | A device | The rollback path is built and unit
-tested but has never run on hardware. Closes when bench test UPD-04 passes on build 1.3.0." A
-decided-against item read: "Disk encryption on the gateway | Encryption keys would live on the
-same flash chip, so a pulled unit gains the attacker nothing extra to defeat; accepted by the
-security lead | ADR-0011".
+An open TL-1 item read: "Rate limit on the reading upload endpoint | Code | A misconfigured
+gateway can send thousands of requests a minute. Closes when the limit is in place and the load
+test shows normal gateways are not throttled." A decided-against item read: "A separate database
+per customer | Per-customer schemas with row-level checks give the same isolation with far less of
+the operating work; accepted by the platform lead | ADR-0009".

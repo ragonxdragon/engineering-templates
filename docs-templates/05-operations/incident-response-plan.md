@@ -36,13 +36,13 @@ determines every containment step below.}
 
 ## Playbook index
 
-| ID    | Incident                            | Severity | First move                           |
-| ----- | ----------------------------------- | -------- | ------------------------------------ |
-| IR-01 | {Credential or key compromise}      | Critical | {Revoke at the source}               |
-| IR-02 | {Bad release reached production}    | Critical | {Stop the rollout, roll back}        |
-| IR-03 | {Certificate expiry}                | High     | {Ship the renewed certificate}       |
-| IR-04 | {Network blocked at customer sites} | High     | {Read diagnostics, switch transport} |
-| IR-05 | {Crash loop}                        | High     | {Read crash records, revert}         |
+| ID    | Incident                                | Severity | First move                              |
+| ----- | --------------------------------------- | -------- | --------------------------------------- |
+| IR-01 | {Secret or credential exposed}          | Critical | {Revoke it where it is issued}          |
+| IR-02 | {Defective release in production}       | Critical | {Halt the rollout}                      |
+| IR-03 | {Data lost or written wrongly}          | High     | {Stop the writer, preserve evidence}    |
+| IR-04 | {Outage of a dependency you do not run} | High     | {Confirm with its status page, degrade} |
+| IR-05 | {Suspected intrusion}                   | Critical | {Preserve logs, isolate the host}       |
 
 ## IR-{NN}: {Incident}
 

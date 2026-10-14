@@ -106,10 +106,9 @@ modes more than any code change.
 
 **Tier 1, page someone now:**
 
-| Rule                                    | Catches | Why it matters                                                     |
-| --------------------------------------- | ------- | ------------------------------------------------------------------ |
-| {No check-in for n reporting intervals} | {IDs}   | {The only signal for failures before the unit reaches the network} |
-| {Credential expires in under n days}    | {ID}    | {Prevents a predictable outage}                                    |
+| Rule                                      | Catches | Why it matters                 |
+| ----------------------------------------- | ------- | ------------------------------ |
+| {A condition on a metric or status field} | {IDs}   | {What it prevents or shortens} |
 
 **Tier 2, open a ticket:**
 
@@ -140,9 +139,8 @@ filtering. Keep one of the two as the source and generate the other.
 
 ## Worked example
 
-The TL-1 guide's highest-RPN entry was GW-2, "Gateway stuck in a restart loop before it reaches
-the network". Tell: the cab light blinks amber, and the trailer never appears on the dashboard.
-Detection scored 9 because nothing remote can see a unit that never connects. The fix that
-mattered was not in the firmware: a Tier 1 alert for "trailer dispatched but no gateway check-in
-for 30 minutes" cut its detection time from "when someone notices" to half an hour, and its D
-score to 3.
+The TL-1 guide's highest-RPN entry was SEN-3, "Sensor battery runs flat early in cold trailers".
+Tell: readings stop from one sensor while the others in the trailer continue. Detection scored 8
+because the battery voltage was reported but nobody looked at it. The fix that mattered was not
+in the firmware: a Tier 2 alert on a falling voltage trend gave two weeks of warning, which
+dropped the D score to 2 and turned a missed shipment record into a planned battery swap.

@@ -44,11 +44,12 @@ flowchart LR
 
 ### 4.1 {Surface name} (`{files or components}`)
 
-| STRIDE | Threat                            | Control or gap                                         | Evidence or tracking      |
-| ------ | --------------------------------- | ------------------------------------------------------ | ------------------------- |
-| T      | {Malicious update image}          | Control: {signature checked before install}            | `{file}:{function}`       |
-| S      | {Rogue server}                    | Gap: {server not authenticated on fallback path}       | {issue or hardening item} |
-| E      | {Downgrade to a vulnerable build} | Accepted risk: {reason, who accepted, decision record} | {ADR-NNNN}                |
+| STRIDE | Threat                                         | Control or gap                                            | Evidence or tracking      |
+| ------ | ---------------------------------------------- | --------------------------------------------------------- | ------------------------- |
+| S      | {Stolen API token reused from another network} | Gap: {tokens are not bound to a client}                   | {issue or hardening item} |
+| T      | {Request altered in transit}                   | Control: {TLS required at the load balancer}              | `{config file}:{setting}` |
+| E      | {User reads another tenant's records}          | Control: {tenant taken from the token, never the request} | `{file}:{function}`       |
+| D      | {Client floods the upload endpoint}            | Accepted risk: {reason, who accepted, decision record}    | {ADR-NNNN}                |
 
 {Repeat for each surface: remote management, data upload, local network, physical access, stored
 secrets, logs and debug interfaces, build and release pipeline, third-party dependencies.}
