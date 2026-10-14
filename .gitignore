@@ -1,5 +1,4 @@
 node_modules/
-*.docx
-!docs-templates/**/*.docx
+tools/render-docx/out/
 .DS_Store
 Thumbs.db

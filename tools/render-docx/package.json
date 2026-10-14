@@ -1,0 +1,19 @@
+{
+  "name": "render-docx",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Render the Markdown templates in this repository to Word documents.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "render.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "render": "node render.js",
+    "smoke": "node render.js ../../docs-templates/05-operations/rca.md out/rca.docx"
+  },
+  "dependencies": {
+    "docx": "9.7.2"
+  }
+}
