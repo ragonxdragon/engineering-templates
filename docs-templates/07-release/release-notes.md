@@ -15,7 +15,7 @@ than editing the copy.
 
 One section per change that a reader will notice. The heading states the outcome in plain words.
 
-### {Outcome, for example: "Uploads arrive on schedule"}
+### {Outcome, for example: "Alerts reach the dispatcher sooner"}
 
 - **What was wrong:** {the behavior before, in observable terms}
 - **What it cost:** {the effect on the reader, with a measured figure where one exists}

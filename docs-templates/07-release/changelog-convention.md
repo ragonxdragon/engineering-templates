@@ -25,9 +25,9 @@ types to headings, it reads this mapping rather than holding its own.
 
 ## Rules
 
-1. **Type by effect.** A new workflow that provisions devices is a `feat`, even though it lives in
-   `.github/`. A dependency bump that changes runtime behavior is a `fix` or `feat`, not a
-   `chore`. The non-recording types are only for changes with no effect on what users get.
+1. **Type by effect.** A CI job that publishes a new download for users adds something users
+   get, so it is a `feat` even though only pipeline files changed. A dependency bump that changes
+   runtime behavior is a `fix` or `feat`, not a `chore`. The non-recording types are only for changes with no effect on what users get.
 2. **A silent changelog is a signal.** If an automated sync records nothing for a commit that
    changes behavior, the type was wrong. Some teams make the commit hook warn when a
    non-recording type touches source code.
