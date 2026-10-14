@@ -1,0 +1,63 @@
+name: Bug report
+description: Something behaves differently from what the documentation or the tests say.
+title: "[bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A report with a version, an environment, and exact steps is usually reproducible in one try. Please do not include secrets or private data.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: One or two sentences describing what you observed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: If a document or test says otherwise, link it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands or actions, in order.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Release tag or commit SHA.
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, runtime version, hardware revision, or deployment, as relevant.
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      description: The smallest excerpt that shows the problem. Remove secrets first.
+      render: text
+    validations:
+      required: false

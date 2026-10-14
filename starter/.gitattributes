@@ -1,0 +1,12 @@
+# Store text with LF endings so every checkout and CI read the same bytes.
+* text=auto eol=lf
+
+# Scripts must keep LF, or a Windows checkout breaks them.
+*.sh text eol=lf
+
+# Binary formats are never converted.
+*.png binary
+*.jpg binary
+*.pdf binary
+*.docx binary
+*.xlsx binary

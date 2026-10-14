@@ -1,0 +1,14 @@
+// markdownlint-cli2 settings. scripts/check.sh runs it over "**/*.md".
+{
+  "gitignore": true,
+  "ignores": ["node_modules"],
+  "config": {
+    "default": true,
+    // Prose and tables wrap where they read best.
+    "MD013": false,
+    // Keep a Changelog repeats headings such as "### Added" per release.
+    "MD024": { "siblings_only": true },
+    // Plain-text blocks carry no language.
+    "MD040": false
+  }
+}
