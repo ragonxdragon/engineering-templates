@@ -115,4 +115,4 @@ invented numbers, and guidance that says what good looks like and why.
 
 ## License
 
-[MIT](LICENSE). Copyright (c) 2026 Jack Hall.
+[MIT](LICENSE). Copyright (c) 2026 John Hall.
