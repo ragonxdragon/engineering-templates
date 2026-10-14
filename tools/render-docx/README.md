@@ -33,5 +33,5 @@ text and drop the target.
 
 ## Dependency
 
-[docx](https://www.npmjs.com/package/docx) 9.7.2, MIT license, pinned to an exact version with a
+[docx](https://github.com/dolanmiu/docx) 9.7.2, MIT license, pinned to an exact version with a
 lockfile.
