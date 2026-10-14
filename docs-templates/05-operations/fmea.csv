@@ -1,0 +1,3 @@
+ID,Subsystem,Failure mode,Effect,Tell,Root cause,Current controls,Severity (S),Occurrence (O),Detection (D),RPN,Time to detect,Recommended action,Owner,Target date,Status,Rating date
+GW-2,Gateway,Restart loop before the gateway reaches the network,Trailer data is missing for the whole trip,Cab light blinks amber; trailer absent from the dashboard,{cited cause},{existing check or none},8,4,9,=H2*I2*J2,Indefinite without an alert,Alert when a dispatched trailer has no check-in for 30 minutes,{name},{YYYY-MM-DD},Open,{YYYY-MM-DD}
+{ID},{subsystem},{mode},{effect},{symptom},{cause},{controls},{1-10},{1-10},{1-10},=H3*I3*J3,{time},{action},{name},{YYYY-MM-DD},{status},{YYYY-MM-DD}
