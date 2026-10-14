@@ -13,7 +13,7 @@ costs more runs. A planned design finds them with fewer.
 ## 1. Question
 
 {The decision this experiment informs, stated as a question with a measurable answer. Example:
-"Which mounting position and transmit setting give the highest read rate at walking speed?"}
+"Which mounting position and radio setting give the fewest missed readings on a moving trailer?"}
 
 ## 2. Responses
 
